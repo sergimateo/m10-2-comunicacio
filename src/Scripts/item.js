@@ -1,13 +1,19 @@
-// import ButtonCounter from "@/components/ButtonCounter.vue";
+import ButtonCounter from "@/components/ButtonCounter.vue";
 
 export default {
   components: {
-    // ButtonCounter: ButtonCounter
+    ButtonCounter: ButtonCounter
   },
-  props: ["title"],
+  props: ["title", "btnCount"],
   data() {
     return {
-      count: 0
+      cnt: "0"
     };
+  },
+  methods: {
+    plusCount() {
+      this.btnCount++;
+      this.$emit("btnChanged", this.btnCount);
+    }
   }
 };

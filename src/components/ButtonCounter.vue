@@ -1,5 +1,5 @@
 <template>
-  <button v-on:click="count++">{{ count }}</button>
+  <button v-on:click="plusCount">{{ btnCount }}</button>
 </template>
 
 <script type="text/javascript" src="@/Scripts/buttonCounter.js"></script>

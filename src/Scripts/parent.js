@@ -5,6 +5,7 @@ export default {
   },
   data() {
     return {
+      cntItem: "0",
       items: [
         {
           id: "1",
