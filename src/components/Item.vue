@@ -1,6 +1,7 @@
 <template>
   <div>
     <h3 id="item-title">{{ title }}</h3>
+    <ButtonCounter></ButtonCounter>
   </div>
 </template>
 
