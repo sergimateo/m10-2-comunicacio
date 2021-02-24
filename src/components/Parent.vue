@@ -1,12 +1,6 @@
 <template>
   <div id="parent">
-    <Item
-      v-for="item in items"
-      :title="item.title"
-      :key="item.id"
-      :btnItemCount="cntItem"
-      @btnItemChanged="cntItem = $event"
-    ></Item>
+    <Item v-for="item in items" :title="item.title" :key="item.id"></Item>
   </div>
 </template>
 
