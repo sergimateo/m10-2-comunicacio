@@ -6,6 +6,12 @@ export default {
   },
   props: ["title"],
   data() {
+<<<<<<< HEAD
     return {};
+=======
+    return {
+      cnt: "0"
+    };
+>>>>>>> br-2
   }
 };

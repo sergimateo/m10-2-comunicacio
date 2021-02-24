@@ -1,7 +1,12 @@
 export default {
+  props: ["btnCount"],
   data() {
-    return {
-      count: 0
-    };
+    return {};
+  },
+  methods: {
+    plusCount() {
+      this.btnCount++;
+      this.$emit("btnChanged", this.btnCount);
+    }
   }
 };
