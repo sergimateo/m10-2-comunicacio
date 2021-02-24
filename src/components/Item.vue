@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3 id="item-title">{{ title }}</h3>
-    <ButtonCounter></ButtonCounter>
+    <button v-on:click="count++">{{ count }}</button>
   </div>
 </template>
 
