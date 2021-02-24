@@ -4,8 +4,8 @@
       v-for="item in items"
       :title="item.title"
       :key="item.id"
-      :btnCount="cntItem"
-      @btnChanged="cntItem = $event"
+      :btnItemCount="cntItem"
+      @btnItemChanged="cntItem = $event"
     ></Item>
   </div>
 </template>

@@ -7,6 +7,6 @@ export default {
     plusCount() {
       this.btnCount++;
       this.$emit("btnChanged", this.btnCount);
-    },
-  },
+    }
+  }
 };

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3 id="item-title">{{ title }}</h3>
-    <button v-on:click="plusCount">{{ btnCount }}</button>
+    <button v-on:click="plusCount">{{ btnItemCount }}</button>
     <ButtonCounter :btnCount="cnt" @btnChanged="cnt = $event"></ButtonCounter>
   </div>
 </template>

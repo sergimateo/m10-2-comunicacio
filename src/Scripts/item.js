@@ -4,7 +4,7 @@ export default {
   components: {
     ButtonCounter: ButtonCounter
   },
-  props: ["title", "btnCount"],
+  props: ["title", "btnItemCount"],
   data() {
     return {
       cnt: "0"
@@ -12,8 +12,8 @@ export default {
   },
   methods: {
     plusCount() {
-      this.btnCount++;
-      this.$emit("btnChanged", this.btnCount);
+      this.btnItemCount++;
+      this.$emit("btnItemChanged", this.btnItemCount);
     }
   }
 };
